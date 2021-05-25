@@ -247,7 +247,9 @@ void thuNhoAnh(unsigned char *&pixels_data, Header &header, DIB &dib, int s)
 		{
 			for (int j = 0; j < n; j++)
 			{
-				temp = 0;
+				blue = 0;
+				green = 0;
+				red = 0;
 				for (int k = m * s; k < (m * s + du_m); k++)
 					for (int l = j * s * bytes; l < (j + 1) * s * bytes; l++)
 					{
@@ -291,6 +293,7 @@ void thuNhoAnh(unsigned char *&pixels_data, Header &header, DIB &dib, int s)
 		{
 			for (int j = 0; j < n; j++)
 			{
+				alpha = 0;
 				blue = 0;
 				green = 0;
 				red = 0;
